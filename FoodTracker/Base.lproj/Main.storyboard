@@ -35,11 +35,14 @@
                                         <rect key="frame" x="0.0" y="32.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyf-WT-0Fr">
                                         <rect key="frame" x="0.0" y="74.5" width="151" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaG-AZ-8zl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -55,6 +58,10 @@
                             <constraint firstItem="VcC-Xl-oXp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="or0-h1-fNR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="379-Yf-PYx" id="iwV-YA-Awd"/>
+                        <outlet property="nameTextField" destination="B2b-Wk-B2U" id="pHb-JV-bEW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
